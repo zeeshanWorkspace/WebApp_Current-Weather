@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Current Weather</title>
+    <link rel="icon" type="image/x-icon" href="Weather_logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="Weather_logo.png" alt="Weather_logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  City
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" id="Delhi">Delhi</a></li>
+                  <li><a class="dropdown-item" id="Mumbai">Mumbai</a></li>
+                  <li><a class="dropdown-item" id="Bangalore">Bangalore</a></li>
+                  <li><a class="dropdown-item" id="Hyderabad">Hyderabad</a></li>
+                  <li><a class="dropdown-item" id="Ahmedabad">Ahmedabad</a></li>
+                  <li><a class="dropdown-item" id="Chennai">Chennai</a></li>
+                  <li><a class="dropdown-item" id="Kolkata">Kolkata</a></li>
+                  <li><a class="dropdown-item" id="Surat">Surat</a></li>
+                  <li><a class="dropdown-item" id="Pune">Pune</a></li>
+                  <li><a class="dropdown-item" id="Jaipur">Jaipur</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="city">
+              <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <br>
+        <h1 class="column"><span id="cityName">-</span></h1>
+
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="column">
+              <h3 class="fs-2">Day & Night detail</h3>
+              <br>
+              <table>
+                <tr>Sunrise : <span id="sunrise">-</span></tr><br>
+                <tr>Sunset : <span id="sunset">-</span></tr><br>
+              </table>
+              </div>
+
+            <div class="column">
+              <h3 class="fs-2">Temperature detail</h3>
+              <br>
+              <table>
+                <tr>Temperature : <span id="temp">-</span> C</tr><br>
+                <tr>Maximum Temperature : <span id="max_temp">-</span> C</tr><br>
+                <tr>Minuimum Temperature : <span id="min_temp">-</span> C</tr><br>
+                <tr>Cloud PCT : <span id="cloud_pct">-</span></tr><br>
+                <tr>Humidity : <span id="humidity">-</span></tr><br>
+                <tr>Feels Like : <span id="feels_like">-</span></tr><br>
+              </table>  
+            </div>
+
+            <div class="column">
+              <h3 class="fs-2">Wind detail</h3>
+              <br>
+              <table>
+                <tr>Wind Speed : <span id="wind_speed">-</span></tr><br>
+                <tr>Wind Degree : <span id="wind_degree">-</span></tr><br>
+              </table>  
+            </div>
+          </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
